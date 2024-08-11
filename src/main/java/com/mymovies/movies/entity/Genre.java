@@ -6,7 +6,6 @@ import java.util.Set;
 
 import org.hibernate.annotations.ColumnDefault;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.mymovies.movies.entity.series.Series;
 
@@ -36,7 +35,6 @@ public class Genre {
 
     @Column(name = "is_active")
     @ColumnDefault("true")
-    @JsonIgnore
     private Boolean isActive = true;
 
      @ManyToMany(fetch = FetchType.LAZY,
