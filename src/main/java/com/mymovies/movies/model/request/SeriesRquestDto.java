@@ -45,10 +45,8 @@ public class SeriesRquestDto {
     @NotNull(message = "Invalid ratingIMDb: ratingIMDb is NULL")
     float ratingIMDb;
 
-    @NotBlank(message = "Invalid nameEng: Empty nameEng")
     String description;
 
-    @NotBlank(message = "Invalid nameEng: Empty nameEng")
     String story;
 
 
